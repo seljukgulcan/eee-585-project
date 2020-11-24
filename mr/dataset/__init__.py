@@ -11,7 +11,7 @@ DIR_ML_25M = 'ml-25m'
 DIR_ML_SMALL = 'ml-latest-small'
 
 
-def download_ml_small(target_filename='ml_small.csv', *, force_download='False'):
+def download_ml_small(target_filename='ml_small.csv', *, force_download=False):
     """
     Downloads movielens small dataset
     :param target_filename: If target file is already there, it skips downloading the file unless force_download is True
@@ -24,7 +24,7 @@ def download_ml_small(target_filename='ml_small.csv', *, force_download='False')
                                 target_filename=target_filename, force_download=force_download)
 
 
-def download_ml_25m(target_filename='ml_25m.csv', *, force_download='False'):
+def download_ml_25m(target_filename='ml_25m.csv', *, force_download=False):
     """
     Downloads movielens-25m dataset
     :param target_filename: If target file is already there, it skips downloading the file unless force_download is True
@@ -37,7 +37,7 @@ def download_ml_25m(target_filename='ml_25m.csv', *, force_download='False'):
                                 target_filename=target_filename, force_download=force_download)
 
 
-def _download_ml_dataset(url, directory_name, target_filename, *, force_download='False'):
+def _download_ml_dataset(url, directory_name, target_filename, *, force_download=False):
     """
     Downloads a movielens dataset
     :param target_filename: If target file is already there, it skips downloading the file unless force_download is True

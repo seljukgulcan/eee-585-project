@@ -1,3 +1,7 @@
 .idea/
 mr/mr.egg-info/
 **/__pycache__
+*.json
+*.npy
+*.csv
+**/.ipynb_checkpoints
